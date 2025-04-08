@@ -1,0 +1,51 @@
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+/* Toda div por padrão ocupa toda a largura disponivel */
+
+.header{
+    
+}
+
+.container{
+    
+    width: 1140px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*Flexbox -> Conjunto de propriedades para organizar o layot*/
+    display: flex; /*Habilito o uso dessas propriedades*/
+    justify-content: space-between; /*Distribui o espaço vazio entre os filhos*/
+    align-items: center; /*Alinhamento vertical*/
+}
+
+.menu a {
+    color: #333333;
+    margin-left: 20px;
+    margin-right: 20px;;
+    text-decoration: none;
+}
+
+.menu a :hover {
+    color: #028176;
+    text-decoration: underline;
+}
+
+.btn {
+    background-color: #20AD96;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+}
+
+.btn :hover {
+    background-color: #028176;
+}
+
+
