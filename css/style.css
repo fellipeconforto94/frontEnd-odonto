@@ -1,3 +1,33 @@
+/*Utilizando variaveis para boa manutenção*/
+
+:root {
+    --brand: #20AD96;
+    --brandDark: #028176;
+    --brandLight: #F3FFFD;
+    --title: #333333;
+    --text: #666666;
+    --rounded: 10px;
+}
+
+/* Representa todos os elementos*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: var(--text);
+    font-size: 16px;
+    line-height: 150%;
+}
+
+h1 {
+    color: var(--title);
+    line-height: 100%;
+}
 
 body {
     font-family: "Poppins", sans-serif;
@@ -6,46 +36,77 @@ body {
 
 /* Toda div por padrão ocupa toda a largura disponivel */
 
-.header{
-    
-}
 
-.container{
-    
-    width: 1140px;
+/* Container que ta dentro do header apenas*/
+.header .container {
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
 
     /*Flexbox -> Conjunto de propriedades para organizar o layot*/
-    display: flex; /*Habilito o uso dessas propriedades*/
-    justify-content: space-between; /*Distribui o espaço vazio entre os filhos*/
-    align-items: center; /*Alinhamento vertical*/
+    display: flex;
+    /*Habilito o uso dessas propriedades*/
+    justify-content: space-between;
+    /*Distribui o espaço vazio entre os filhos*/
+    align-items: center;
+    /*Alinhamento vertical*/
+
+}
+
+.container {
+
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu a {
-    color: #333333;
+    color: var(--title);
     margin-left: 20px;
-    margin-right: 20px;;
+    margin-right: 20px;
+    ;
     text-decoration: none;
 }
 
-.menu a :hover {
-    color: #028176;
+.menu a:hover {
+    color: var(--brandDark);
     text-decoration: underline;
 }
 
 .btn {
-    background-color: #20AD96;
+    background-color: var(--brand);
     color: #FFFFFF;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: var(--rounded);
     padding: 12px 20px;
 }
 
-.btn :hover {
-    background-color: #028176;
+.btn:hover {
+    background-color: var(--brandDark);
 }
 
+.banner {
+    width: 100%;
+    height: 620px;
+    background-image: url(../img/background.webp);
+    background-size: cover;
+    background-position: center center; /*Y, X*/
 
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-banner {
+    width: 560px;
+}
+
+.conteudo-banner h1 {
+    color: #FFFFFF;
+    font-size: 60px;
+    line-height: 100%;
+}
+
+.conteudo-banner p {
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 150%;
+}    
