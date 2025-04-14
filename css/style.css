@@ -11,7 +11,7 @@
 
 /* Representa todos os elementos*/
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -89,7 +89,8 @@ body {
     height: 620px;
     background-image: url(../img/background.webp);
     background-size: cover;
-    background-position: center center; /*Y, X*/
+    background-position: center center;
+    /*Y, X*/
 
     display: flex;
     align-items: center;
@@ -109,4 +110,30 @@ body {
     color: #FFFFFF;
     font-size: 20px;
     line-height: 150%;
-}    
+}
+
+.subtitulo {
+    font-size: 20px;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    column-gap: 24px;
+}
+
+.imagem-apresentacao img {
+    border-radius: var(--rounded);
+}
+
+.servicos{
+    text-align: center;
+}
+
+.titulo-servicos{
+    width: 752px;
+    margin-left: auto;
+    margin-right: auto;
+}
