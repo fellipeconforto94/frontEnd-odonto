@@ -23,11 +23,6 @@ p {
     line-height: 150%;
 }
 
-h1 {
-    color: var(--title);
-    line-height: 100%;
-}
-
 h2 {
     font-size: 40px;
     color: var(--title);
@@ -52,7 +47,6 @@ body {
 .header .container {
     padding-top: 30px;
     padding-bottom: 30px;
-
     /*Flexbox -> Conjunto de propriedades para organizar o layot*/
     display: flex;
     /*Habilito o uso dessas propriedades*/
@@ -74,7 +68,6 @@ body {
     color: var(--title);
     margin-left: 20px;
     margin-right: 20px;
-    ;
     text-decoration: none;
 }
 
@@ -90,6 +83,7 @@ body {
     border-radius: var(--rounded);
     padding: 12px 20px;
     transition: 0.5s;
+    
 }
 
 .btn:hover {
@@ -114,14 +108,12 @@ body {
 
 .conteudo-banner h1 {
     color: #FFFFFF;
-    font-size: 60px;
+    font-size: 60px; 
     line-height: 100%;
 }
 
 .conteudo-banner p {
     color: #FFFFFF;
-    font-size: 20px;
-    line-height: 150%;
 }
 
 .subtitulo {
