@@ -20,7 +20,6 @@ p {
     margin-top: 24px;
     margin-bottom: 24px;
     color: var(--text);
-    font-size: 16px;
     line-height: 150%;
 }
 
@@ -28,6 +27,18 @@ h1 {
     color: var(--title);
     line-height: 100%;
 }
+
+h2 {
+    font-size: 40px;
+    color: var(--title);
+    line-height: 100%;
+}
+
+img {
+    display: block;
+}
+
+
 
 body {
     font-family: "Poppins", sans-serif;
@@ -78,6 +89,7 @@ body {
     text-decoration: none;
     border-radius: var(--rounded);
     padding: 12px 20px;
+    transition: 0.5s;
 }
 
 .btn:hover {
@@ -128,12 +140,79 @@ body {
     border-radius: var(--rounded);
 }
 
-.servicos{
+.servicos {
     text-align: center;
 }
 
-.titulo-servicos{
+.titulo-servicos {
     width: 752px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.flex-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card {
+    width: 364px;
+    height: 200px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: var(--rounded);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: 0.5s;
+}
+
+.card:hover {
+    background-color: var(--brand);
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+
+.card:hover h3,
+.card:hover p {
+    color: #FFFFFF;
+}
+
+.card h3 {
+    color: var(--brand);
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.agende {
+    background-image: linear-gradient(to right, var(--brandDark), var(--brand));
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.agende .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.conteudo-agende {
+    width: 850px;
+}
+
+.conteudo-agende h2, .conteudo-agende p {
+    color: #FFFFFF;
+
+}
+
+.imagem-agende {
+    /*posição em relação ao elemento pai*/
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
