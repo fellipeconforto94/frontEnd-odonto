@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odontorio</title>
-    <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body id="inicio">
-    <div class="header">
+    <header class="header">
 
         <div class="container">
 
@@ -23,36 +27,37 @@
                 <a href="index.html"><img src="img/logo.svg" alt="Logotipo OdontoRio"></a>
 
             </div>
-            <div class="menu">
+            <nav class="menu">
                 <a href="#inicio">Inicio</a>
                 <a href="#quemsomos">Quem Somos</a>
                 <a href="#servicos">Nossos Serviços</a>
                 <a href="#contato">Fale Conosco</a>
-            </div>
+            </nav>
 
             <a href="#" class="btn">Agende</a>
 
         </div>
-    </div>
+    </header>
 
-    <div class="banner">
+    <section class="banner">
         <div class="container">
             <div class="conteudo-banner">
-                <h1>Seu sorriso é a nossa motivação!</h1>
-                <p class="subtitulo">Cuidamos do seu sorriso com excelência e garantimos
+                <h1 data-aos="fade-up">Seu sorriso é a nossa motivação!</h1>
+                <p class="subtitulo" data-aos="fade-up" data-aos-delay="100">Cuidamos do seu sorriso com excelência e
+                    garantimos
                     tratamentos odontológicos de alta qualidade.</p>
                 <a href="#" class="btn">Agende uma consulta</a>
-                <p class="subtitulo2">Responsável Dra. Amanda Carvalho</p>
+                <p class="subtitulo2" data-aos="fade-up" data-aos-delay="300">Responsável Dra. Amanda Carvalho</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container apresentacao" id="quemsomos">
+    <section class="container apresentacao" id="quemsomos">
         <div class="imagem-apresentacao">
             <img src="img/clinica.webp" alt="">
         </div>
 
-        <div class="conteudo-apresentacao">
+        <div class="conteudo-apresentacao" data-aos="fade-up" data-aos-delay="100">
 
             <h2>Tecnologia de ponta a serviço do seu sorriso</h2>
             <p>Utilizamos as mais avançadas tecnologias odontológicas para garantir tratamentos precisos e eficazes.
@@ -62,7 +67,7 @@
             <a href="#" class="btn">Conheça nossas instalações</a>
 
         </div>
-    </div>
+    </section>
 
     <div class="container servicos" id="servicos">
 
@@ -74,42 +79,42 @@
 
         <div class="flex-cards">
 
-            <div class="card">
+            <article class="card">
                 <h3>Check-up Odontológico</h3>
                 <p>Exames de rotina e avaliações gerais da saúde bucal.</p>
-            </div>
+            </article>
 
-            <div class="card">
+            <article class="card">
                 <h3>Clareamento Dental</h3>
                 <p>Procedimentos para branqueamento dos dentes, realçando o sorriso.</p>
-            </div>
+            </article>
 
-            <div class="card">
+            <article class="card">
                 <h3>Ortodontia</h3>
                 <p>Correção do alinhamento dos dentes e mordida com aparelhos fixos e móveis.</p>
-            </div>
+            </article>
 
-            <div class="card">
+            <article class="card">
                 <h3>Implantes Dentários</h3>
                 <p>Substituição de dentes perdidos com implantes de titânio.</p>
-            </div>
+            </article>
 
-            <div class="card">
+            <article class="card">
                 <h3>Próteses Dentárias</h3>
                 <p>Confeccionamento de próteses parciais e totais para reposição de dentes.</p>
-            </div>
+            </article>
 
-            <div class="card">
+            <article class="card">
                 <h3>Tratamento de Canal</h3>
                 <p>Tratamento endodôntico para salvar dentes com infecção ou danos na raiz.</p>
-            </div>
+            </article>
 
 
         </div>
 
     </div>
 
-    <div class="agende">
+    <section class="agende">
 
         <div class="container">
 
@@ -128,19 +133,36 @@
 
         </div>
 
-    </div>
+    </section>
 
-    <div class="container depoimentos">
+    <section class="container depoimentos">
 
         <h2>O que nossos pacientes dizem</h2>
-        <p>"Minha experiência na clínica foi excepcional. Desde o atendimento inicial até o final do tratamento, a
-            equipe foi extremamente profissional e atenciosa. Meu clareamento dental superou minhas expectativas e o
-            resultado ficou maravilhoso!”</p>
-        <span>Claudio Silva</span>
 
-    </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p>"Minha experiência na clínica foi excepcional. Desde o atendimento inicial até o final do
+                        tratamento,a equipe foi extremamente profissional e atenciosa. Meu clareamento dental superou
+                        minhas
+                        expectativas e o resultado ficou maravilhoso!”</p>
+                    <span>Claudio Silva</span>
+                </div>
 
-    <div class="container contato" id="contato">
+                <div class="swiper-slide">
+                    <p>"Minha experiência na clínica foi excepcional. Desde o atendimento inicial até o final do
+                        tratamento,a equipe foi extremamente profissional e atenciosa. Meu clareamento dental superou
+                        minhas
+                        expectativas e o resultado ficou maravilhoso!”</p>
+                    <span>Fluminense</span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container contato" id="contato">
         <div class="conteudo-contato">
             <h2>A melhor clínica odontológica do Rio</h2>
             <h3>Endereço</h3>
@@ -163,9 +185,9 @@
                 width="568" height="460" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </div>
+    </section>
 
-    <div class="footer">
+    <footer class="footer">
 
         <div class="container">
 
@@ -180,6 +202,29 @@
             </div>
 
         </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
 </body>
 
 </html>
