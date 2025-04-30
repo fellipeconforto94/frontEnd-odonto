@@ -304,4 +304,118 @@ body {
     column-gap: 20px;
 }
 
+/*
+Media Queries
+Condicionais para alterar o site para determinados tamanhos (responsividade)
+*/
 
+@media (max-width: 1200px) {
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+        box-sizing: border-box;
+    }
+    
+    /* removendo botão e o menu*/
+    .header .btn {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .bar {
+        width: 40px;
+        height: 3px;
+        background-color: var(--brand);
+        margin-bottom: 3px;
+    }
+
+    .banner {
+        background-position: center;
+    }
+
+    .conteudo-banner{
+        width: 100%;
+        max-width: 560px;;
+    }
+
+    .conteudo-banner h1{
+        font-size: 36px;
+    }
+
+    .subtitulo {
+        font-size: 16px;;
+    }
+
+    .imagem-apresentacao img {
+        max-width: 100%; /*imagem responsiva*/
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        row-gap: 36px;
+    }
+
+    .conteudo-apresentacao{
+        max-width: 558px;
+    }
+
+    .titulo-servicos {
+        width: 100%;
+        max-width: 752px;
+    }
+
+    .flex-cards {
+        justify-content: center;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .conteudo-agende {
+        width: calc(100% - 270px);
+        max-width: 850px;
+    }
+
+    .contato {
+        flex-direction: column;
+        row-gap: 36px;
+    }
+
+    .mapa, .mapa iframe {
+        width: 100%;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        row-gap: 20px;
+        text-align: center;
+    }
+    
+    
+}
+
+@media (max-width: 767px) {
+
+    .banner {
+        background-position: -600px;
+    }
+
+    .imagem-agende {
+        display: none;
+    }
+
+    .conteudo-agende{
+        width: 100%;
+
+    }
+}
