@@ -17,10 +17,13 @@
 }
 
 html {
-    scroll-behavior: smooth; /*Navegação em ancora seja suave*/
+    scroll-behavior: smooth;
+    /*Navegação em ancora seja suave*/
 }
 
-#quemsomos,#contato,#servicos {
+#quemsomos,
+#contato,
+#servicos {
     scroll-margin-top: 150px;
 }
 
@@ -47,7 +50,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-.header{
+.header {
     position: sticky;
     top: 0;
     background-color: #FFFFFF;
@@ -89,6 +92,15 @@ body {
 .menu a:hover {
     color: var(--brandDark);
     text-decoration: underline;
+}
+
+/*faz com que as redes sociais fiquem visiveis apenas no mobile*/
+@media screen and (min-width: 1200px) {
+
+    .menu .social {
+        display: none;
+    }
+
 }
 
 /* ##########     UTILITARIOS     ############ */
@@ -294,7 +306,7 @@ body {
 
 }
 
-.conteudo-footer p{
+.conteudo-footer p {
     color: #FFFFFF;
     margin: 0;
 }
@@ -321,14 +333,51 @@ Condicionais para alterar o site para determinados tamanhos (responsividade)
         padding-right: 12px;
         box-sizing: border-box;
     }
-    
+
     /* removendo botão e o menu*/
     .header .btn {
         display: none;
     }
 
     .menu {
-        display: none;
+        transform: translateX(-100%);
+        transition: 1s;
+        position: absolute;
+        top: 97px;
+        left: 0;
+        width: 65%;
+        height: 100vh;
+        background-color: var(--brandDark);
+        height: calc(100vh - 97px);
+
+    }
+
+    .menu-open {
+        transform: translateX(0);
+    }
+
+    /*Formata o elemento filho direto(apenas)*/
+    .menu>a {
+        color: var(--brandLight);
+        margin: 0;
+        padding: 20px 10px;
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+        border-bottom: 1px solid var(--brand);
+    }
+
+    .menu a:hover {
+        background-color: var(--brand);
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .menu .social {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        justify-content: center;
     }
 
     .bar {
@@ -342,21 +391,24 @@ Condicionais para alterar o site para determinados tamanhos (responsividade)
         background-position: center;
     }
 
-    .conteudo-banner{
+    .conteudo-banner {
         width: 100%;
-        max-width: 560px;;
+        max-width: 560px;
+        ;
     }
 
-    .conteudo-banner h1{
+    .conteudo-banner h1 {
         font-size: 36px;
     }
 
     .subtitulo {
-        font-size: 16px;;
+        font-size: 16px;
+        ;
     }
 
     .imagem-apresentacao img {
-        max-width: 100%; /*imagem responsiva*/
+        max-width: 100%;
+        /*imagem responsiva*/
     }
 
     .apresentacao {
@@ -364,7 +416,7 @@ Condicionais para alterar o site para determinados tamanhos (responsividade)
         row-gap: 36px;
     }
 
-    .conteudo-apresentacao{
+    .conteudo-apresentacao {
         max-width: 558px;
     }
 
@@ -391,7 +443,8 @@ Condicionais para alterar o site para determinados tamanhos (responsividade)
         row-gap: 36px;
     }
 
-    .mapa, .mapa iframe {
+    .mapa,
+    .mapa iframe {
         width: 100%;
     }
 
@@ -400,8 +453,8 @@ Condicionais para alterar o site para determinados tamanhos (responsividade)
         row-gap: 20px;
         text-align: center;
     }
-    
-    
+
+
 }
 
 @media (max-width: 767px) {
@@ -414,7 +467,7 @@ Condicionais para alterar o site para determinados tamanhos (responsividade)
         display: none;
     }
 
-    .conteudo-agende{
+    .conteudo-agende {
         width: 100%;
 
     }
