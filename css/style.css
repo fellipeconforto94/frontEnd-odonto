@@ -385,6 +385,20 @@ Condicionais para alterar o site para determinados tamanhos (responsividade)
         height: 3px;
         background-color: var(--brand);
         margin-bottom: 3px;
+        transition: 0.5s;
+    }
+
+    .x .bar:first-child {
+        transform: rotate(45deg) translate(5px, 4px);
+    }
+
+    .x .bar:nth-child(2) {
+        opacity: 0;
+        transform: translate(-200px);
+    }
+
+    .x .bar:last-child {
+        transform: rotate(-45deg) translate(4px, -3px);
     }
 
     .banner {
